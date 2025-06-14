@@ -33,9 +33,9 @@ const NavBar = () => {
       )}
     >
       <div className='container flex items-center justify-between'>
-        <a href='#hero' className='text-2xl font-bold -ml-13'>
-          <span className='relative z-10 text-glow text-foreground'>
-            Walter<span className='text-primary'> Portfolio</span>
+        <a href='#hero' className='text-2xl font-bold -md:13'>
+          <span className='relative z-10 text-glow text-foreground pl'>
+            Walter<span className='text-primary '> Portfolio</span>
           </span>
         </a>
 
@@ -44,13 +44,13 @@ const NavBar = () => {
             <a
               key={key}
               href={item.href}
-              className='text-xl text-foreground/80 hover:text-primary transition-colors duration-300'
+              className='text-xl text-foreground/80 text-glow hover:text-primary transition-colors duration-300'
             >
               {item.name}
             </a>
           ))}
         </div>
-
+ 
         <button 
           onClick={() => setIsMenuOpen((prev) => !prev)} 
           className='md:hidden p-2 text-foreground z-50'
@@ -62,7 +62,7 @@ const NavBar = () => {
         <div
           className={cn(
             'fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center',
-            'transition-all duration-300 md:hidden',
+            'transition-all duration-300 text-glow',
             isMenuOpen
               ? 'opacity-100 pointer-events-auto'
               : 'opacity-0 pointer-events-none'
@@ -73,7 +73,7 @@ const NavBar = () => {
               <a
                 key={key}
                 href={item.href}
-                className='text-foreground/80 hover:text-primary transition-colors duration-300'
+                className='text-foreground/80 hover:text-primary transition-colors duration-300  '
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

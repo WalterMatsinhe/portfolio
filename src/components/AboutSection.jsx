@@ -29,7 +29,9 @@ const AboutSection = () => {
                     <a className='cosmic-button' href='#contact'>
                         Get in Touch
                     </a>
-                     <a className=' flex items-center gap-2 px-6 py-2 rounded-full border-primary text-primary hover:bg-primary/10 transition-colors duration-300' href='#contact'>
+                     <a 
+                        className=' flex items-center gap-2 px-6 py-2 rounded-full border-primary text-primary hover:bg-primary/10 transition-colors duration-300 max-sm:items-center' 
+                        href='#contact'>
                         <span className='underline'>Download CV</span><Download className=' h-6 w-6 text-primary'/>
                     </a>
                 </div>

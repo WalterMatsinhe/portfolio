@@ -12,7 +12,7 @@ const HeroSection = () => {
           <h1 className='text-4xl md:text-6xl font-bold tracking-tight'>
             <span className='opacity-0 animate-fade-in delay-[0ms]'>Hi, I'm </span>
             <span className='opacity-0 text-primary animate-fade-in delay-[300ms]'>Walter</span>
-            <span className='opacity-0 text-gradient ml-2 animate-fade-in delay-[600ms]'>Matsinhe</span>
+            <span className='opacity-0 text-gradient ml-2 animate-fade-in delay-[500ms]'>Matsinhe</span>
           </h1>
           <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto mt-10 mb-8 opacity-0 animate-fade-in-delay-3'>
             🎓 I'm a Computer Science student passionate about coding and technology.
@@ -21,7 +21,7 @@ const HeroSection = () => {
             🚀 Let's connect and create something amazing together!
           </p>
           <div className='pt-4 opacity-0 animate-fade-in-delay-4'>
-            <a className='cosmic-button text-xl' href='#projects'>
+            <a className='text-xl cosmic-button' href='#projects'>
                 View my Work
             </a>
           </div>

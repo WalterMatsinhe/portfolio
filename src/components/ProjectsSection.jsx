@@ -8,8 +8,8 @@ const projects = [
         description: 'A beautifull app to search for movies using React',
         image: 'Projects/MovieApp.PNG',
         tags: ['React', 'TailwindCss','Vite'],
-        demoUrl:'#',
-        githubUrl:'#'
+        demoUrl:'#',  
+        githubUrl:'https://github.com/walter2000matsinhe/movie-app'
         
     },
     {
@@ -19,7 +19,7 @@ const projects = [
         image: 'Projects/Portfolio.PNG',
         tags: ['React', 'TailwindCss','Vite'],
         demoUrl:'#', 
-        githubUrl:'#'
+        githubUrl:'https://github.com/walter2000matsinhe/portfolio'
     },
     {
         id:3,
@@ -80,6 +80,7 @@ const ProjectsSection = () => {
                             <a 
                               className='text-foreground/80 hover:text-primary transition-colors duration-300'
                               href={project.githubUrl}
+                              target='_blank'
                               >
                                 <Github size={20}/>
                             </a>
