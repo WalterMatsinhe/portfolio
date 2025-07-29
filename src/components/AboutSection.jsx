@@ -7,17 +7,17 @@ const AboutSection = () => {
         {''}
         <div className='container mx-auto max-w-5xl'>
             <h2 className='text-space text-3xl md:text-4xl font-bold mb-12 text-center'>
-                About<span className='text-primary'> me</span>
+                About<span className='text-primary'> us</span>
             </h2>
         </div>
 
         <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
             <div className='space-y-6'>
-                <h3 className='text-2xl font-semibold'>Passionate web Developer and Tech Creator</h3>
+                <h3 className='text-2xl font-semibold'>At Boomix, we’re more than just a juice — we’re a mission.</h3>
                 <p className='text-muted-foreground '>
-                    With over 3 years of experience in web development , i socialize
-                    in creating responsive and accessible  web
-                    applications using modern technologies.
+                    As people age, access to proper nutrition becomes harder, and manufactured supplements often come with 
+                    side effects or confusing ingredient lists. That’s why we created a natural, nutrient-rich juice specifically
+                     formulated for senior citizens who deserve better.
                 </p>
                 <p className='text-muted-foreground'>
                     🎓 I'm a Computer Science student passionate about coding and technology.
