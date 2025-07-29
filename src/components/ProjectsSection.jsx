@@ -8,29 +8,29 @@ const projects = [
         description: 'A beautifull app to search for movies using React',
         image: 'Projects/MovieApp.PNG',
         tags: ['React', 'TailwindCss','Vite'],
-        demoUrl:'#',  
+        demoUrl:'https://movie-app-umber-rho-35.vercel.app/',  
         githubUrl:'https://github.com/walter2000matsinhe/movie-app'
         
     },
     {
-        id:2,
-        title:'Portfolio',
-        description: 'A beautifull app about my skills  using React',
-        image: 'Projects/Portfolio.PNG',
-        tags: ['React', 'TailwindCss','Vite'],
-        demoUrl:'#', 
-        githubUrl:'https://github.com/walter2000matsinhe/portfolio'
+        id:3,
+        title:'Vita-shield',
+        description: 'A vitamine juice website',
+        image: 'Projects/Bloomix.PNG',
+        tags: ['React', 'TailwindCss', 'Vite'],
+        demoUrl:'https://bloomix.vercel.app/',
+        githubUrl:'https://github.com/WalterMatsinhe/bloomix'
     },
     {
-        id:3,
-        title:'Movie App',
-        description: 'A beautifull app to search for movies using React',
-        image: 'Projects/MovieApp.PNG',
-        tags: ['React', 'TailwindCss', 'Vite'],
-        demoUrl:'#',
-        githubUrl:'#'
-    }
-
+        id:2,
+        title:'Portfolio',
+        description: 'You can find all about me here',
+        image: 'Projects/Portfolio.PNG',
+        tags: ['React', 'TailwindCss','Vite'],
+        demoUrl:'https://portfolio-walter-ten.vercel.app/', 
+        githubUrl:'https://github.com/walter2000matsinhe/portfolio'
+    },
+    
 ]
 
 const ProjectsSection = () => {
@@ -94,7 +94,7 @@ const ProjectsSection = () => {
             <div className='text-center mt-12'>
                 <a 
                   className='cosmic-button w-fit flex items-center mx-auto gap-2 '
-                  href='https://github.com/walter2000matsinhe'
+                  href='https://github.com/WalterMatsinhe'
                   target='_blank'
                 >
                     Check My GitHub <ArrowRight size={16}/>
