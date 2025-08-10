@@ -1,35 +1,50 @@
-import { ArrowDown } from 'lucide-react';
-import React from 'react';
+import { ArrowDown } from "lucide-react";
+import React from "react";
+import { BoxReveal } from "@/components/magicui/box-reveal";
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 const HeroSection = () => {
   return (
-    <section
-      id='hero'
-      className='relative min-h-screen flex flex-col items-center justify-center px-4'
-    >
-      <div className='container max-w-4xl mx-auto text-center z-10'>
-        <div className='space-y-6'>
-          <h1 className='text-4xl md:text-6xl font-bold tracking-tight'>
-            <span className='opacity-0 animate-fade-in delay-[0ms]'>Hi, I'm </span>
-            <span className='opacity-0 text-primary animate-fade-in delay-[300ms]'>Walter</span>
-            <span className='opacity-0 text-gradient ml-2 animate-fade-in delay-[500ms]'>Matsinhe</span>
-          </h1>
-          <p className='text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto mt-10 mb-8 opacity-0 animate-fade-in-delay-3'>
-            🎓 I'm a Computer Science student passionate about coding and technology.
-            💻 I work with Java, CSS, React, HTML, and MySQL to build responsive, functional, and efficient applications.
-            🌱 Currently, I'm diving deeper into full-stack development and enhancing my problem-solving skills.
-            🚀 Let's connect and create something amazing together!
-          </p>
-          <div className='pt-4 opacity-0 animate-fade-in-delay-4'>
-            <a className='text-xl cosmic-button' href='#projects'>
-                View my Work
-            </a>
-          </div>
+    <section id="hero" className="relative min-h-screen">
+      <div className="flex items-start justify-start px-4 sm:px-8 mt-[60px] sm:mt-[100px] ml-2 sm:ml-6">
+        <div className="flex flex-col justify-center overflow-ellipsis items-start z-10 leading-[0.8] tracking-[-0.08em]">
+          <BoxReveal boxColor={"hsl(var(--primary))"} duration={2.5}>
+            <h1 className="text-[80px] sm:text-[120px] md:text-[200px] font-bold">
+              Hi,
+              <span className="text-[80px] sm:text-[120px] md:text-[200px] font-bold ml-2 sm:ml-6 opacity-0 animate-fade-in delay-[0ms]">
+                I'm
+              </span>
+            </h1>
+          </BoxReveal>
+
+          <BoxReveal boxColor={"white"} duration={3.5}>
+            <h1 className="text-[80px] sm:text-[120px] md:text-[200px] font-bold text-primary opacity-0 animate-fade-in delay-[300ms] mb-2">
+              Walter
+            </h1>
+          </BoxReveal>
+
+          <BoxReveal boxColor={"hsl(var(--primary))"} duration={4.5}>
+            <h1 className="text-[80px] sm:text-[120px] md:text-[200px] font-bold opacity-0 animate-fade-in delay-[500ms] mb-2">
+              Matsinhe
+            </h1>
+          </BoxReveal>
         </div>
       </div>
-      <div className='absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce'>
-      <span className='text-sm text-muted-foreground mb-2'>scroll</span>
-      <ArrowDown className='h-5 w-5 text-primary'/>
+
+      <div className="flex items-center justify-between   mt-3 pt-6 opacity-0 animate-fade-in-delay-4">
+        <div className="flex items-center justify-center ml-8">
+        <div className="flex flex-col items-center justify-center animate-bounce">
+          <span className="text-sm text-muted-foreground ">scroll</span>
+          <ArrowDown className="h-5 w-5 text-primary" />
+        </div>
+        </div>
+        <div className ='mr-18'>
+          <InteractiveHoverButton>
+          <a  href="#projects" >
+          View my Work
+        </a>
+        </InteractiveHoverButton>
+        </div>
       </div>
     </section>
   );

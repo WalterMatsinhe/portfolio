@@ -13,7 +13,7 @@ const projects = [
         
     },
     {
-        id:3,
+        id:2,
         title:'Vita-shield',
         description: 'A vitamine juice website',
         image: 'Projects/Bloomix.PNG',
@@ -22,13 +22,22 @@ const projects = [
         githubUrl:'https://github.com/WalterMatsinhe/bloomix'
     },
     {
-        id:2,
+        id:3,
         title:'Portfolio',
         description: 'You can find all about me here',
         image: 'Projects/Portfolio.PNG',
         tags: ['React', 'TailwindCss','Vite'],
         demoUrl:'https://portfolio-walter-ten.vercel.app/', 
         githubUrl:'https://github.com/walter2000matsinhe/portfolio'
+    },
+    {
+        id:4,
+        title:'Ecommerce',
+        description: 'Looking for Online Shop?...Here is the solution',
+        image: 'Projects/Ecommerce.PNG',
+        tags: ['React', 'TailwindCss','Vite','MongoDB'],
+        demoUrl:'#', 
+        githubUrl:'#'
     },
     
 ]

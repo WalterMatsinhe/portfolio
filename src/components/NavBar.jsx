@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '../lib/utils';
+import { AuroraText } from "@/components/magicui/aurora-text";
 
 const navItems = [
   { name: 'Home', href: '#hero' },
@@ -32,11 +33,9 @@ const NavBar = () => {
           : 'py-5'
       )}
     >
-      <div className='container flex items-center justify-between'>
-        <a href='#hero' className='text-2xl font-bold -md:13'>
-          <span className='relative z-10 text-glow text-foreground pl'>
-            Walter<span className='text-primary '> Portfolio</span>
-          </span>
+      <div className='container flex items-center justify-between '>
+        <a href='#hero' className='text-sm md:text-2xl font-bold -md:13 bg-bglogo border-2 rounded-sm px-1 md:px-2 shadow-sm shadow-primary'>
+          WALTER<AuroraText colors={["hsl(var(--primary))", "hsl(var(--primary-foreground))"]} >PORTFOLIO</AuroraText>
         </a>
 
         <div className='hidden md:flex space-x-8'>
@@ -44,7 +43,7 @@ const NavBar = () => {
             <a
               key={key}
               href={item.href}
-              className='text-xl text-foreground/80 text-glow hover:text-primary transition-colors duration-300'
+              className='text-xl text-foreground/80 text-glow hover:text-primary transition-colors duration-300 hover:scale-115'
             >
               {item.name}
             </a>

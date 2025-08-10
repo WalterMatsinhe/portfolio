@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-border: hsl(var(--border));
@@ -9,6 +12,7 @@
   --color-primary-foreground: hsl(var(--primary-foreground));
 
   --color-card: hsl(var(--card));
+  --color-bglogo: hsl(var(--bglogo));
 
   --animate-float: float 6s ease-in-out infinite;
   --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
@@ -71,6 +75,7 @@
 
     --primary: 205 100% 50%;
     --primary-foreground: 210 40% 98%;
+    --bglogo: 0 0% 100%;
 
     --border: 205 100% 50%;
   }
@@ -84,6 +89,9 @@
 
     --primary: 205 100% 50%;
     --primary-foreground: 210 31% 91%;
+    --bglogo: 0 0% 0%;
+    
+    
 
     --border: 205 100% 50%;
   }
@@ -155,4 +163,39 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
+}
+
+@theme inline {
+  --animate-aurora: aurora 8s ease-in-out infinite alternate;
+  @keyframes aurora {
+  0% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+    }
+  25% {
+    background-position: 50% 100%;
+    transform: rotate(5deg) scale(1.1);
+    }
+  50% {
+    background-position: 100% 50%;
+    transform: rotate(-3deg) scale(0.95);
+    }
+  75% {
+    background-position: 50% 0%;
+    transform: rotate(3deg) scale(1.05);
+    }
+  100% {
+    background-position: 0% 50%;
+    transform: rotate(-5deg) scale(0.9);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
